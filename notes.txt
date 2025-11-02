@@ -1,0 +1,3 @@
+I want to capture all the invalide massages/error massages and show them at once as a list
+
+when the field is found to have invalid character or empty what does the browser return?

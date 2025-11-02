@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="output.css" rel="stylesheet">
+  <title>Fortune Teller</title>
+</head>
+
+<!-- Main page container with mystical gradient background -->
+
+<body class="bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900 min-h-screen flex flex-col p-6">
+
+  <!-- Main heading -->
+  <h1 class="text-4xl font-bold text-white text-center mb-4">Fortune Teller</h1>
+
+  <!-- Introductory text -->
+  <p class="text-4xl text-white - white text text-center">"Hi, I can tell your Good Future"</p>
+  <p class="text-xl text-white text-center mb-2">"Just provide me with the information and I will unveil your future"
+  </p>
+
+  <!-- Fortune Teller input form -->
+  <form action="submit" class="max-w-md mx-auto space-y-4">
+
+    <!-- Mother's name input field -->
+    <label class="block text-white mb-2">Your mother’s first name</label>
+    <input class="w-full px-4 py-2 rounded-lg text-center" type="text" id="mothername"></input><br>
+
+    <!-- Street name input field -->
+    <label class="text-white - white text text-center">The name of the street they grew up on</label>
+    <input class="w-full px-4 py-2 rounded-lg text-center" type="text" id="streetname"> </input>
+
+    <!-- Favorite color input field -->
+    <label class="text-white - white text text-center">Your favourite colour as a child</label>
+    <input class="w-full px-4 py-2 rounded-lg text-center" type="text" id="colour"></input><br>
+
+    <!-- Age input field -->
+    <label class="text-white - white text text-center">Your current age</label>
+    <input class="w-full px-4 py-2 rounded-lg text-center" type="text" id="age"></input><br>
+
+    <!-- Number input field (1-10) -->
+    <label class="text-white - white text text-center">A favourite number between 1 and 10</label>
+    <input class="w-full px-4 py-2 rounded-lg text-center" type="text" id="anynumber"></label></input>
+
+    <!-- Fortune button that triggers the JavaScript -->
+    <button class="text-white - white text px-6 rounded-lg font-bold text-center border-2 border-transparent
+    hover:border-gradient-to-r hover:from-purple-500 hover:to-pink-500 transition-all-300" id="fortune-button"
+      type="button">TELL MY FORTUNE</button>
+  </form>
+
+  <!-- Container for single error messages (legacy, not used in bulk validation) -->
+  <div id="unfilled" class="mt-6 text-center text-red-500 text-lg font-medium"></div>
+
+  <!-- Container where the fortune prediction will be displayed -->
+  <div id="fortune-result" class="mt-6"></div>
+
+  <!-- Container for bulk validation error list (shows ALL errors at once) -->
+  <div id="listofErrors" class="mt-6"></div>
+
+  <!-- Link to the JavaScript file that handles form validation and fortune calculation -->
+  <script src="fortuneTeller.js"></script>
+
+</body>
+
+</html>
